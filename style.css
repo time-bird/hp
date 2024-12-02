@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+:root {
+  --darkgreen: #228B22;
+  --lightgreen: #B4DF9A;
+  --darkgray: #555555;
+  --gray: #808080;
+  --lightgray: #dcdcdc;
+}
+
+body, ul, li {  /* スタイル初期化 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0px;          /* ページ全体のmargin */
+  padding: 0px;         /* ページ全体のpadding */
+}
+
+#main {
+  margin-left: auto;    /* 左側マージンを自動的に空ける */
+  margin-right: auto;   /* 右側マージンを自動的に空ける */
+  width: 70%;           /* 幅を決定する */
+  font-family: sans-serif;
+}
+/* タイトルヘッダー */
+#header {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.headerflex {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.title {
+  padding-left: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--darkgreen);
+}
+/* メニューバー */
+.nav_wrap {
+  text-align: center;
+}
+.nav_lists {
+  display: flex;
+  list-style: none;
+}
+.nav_list {
+  width: 25%;
+  height: 50px;
+  background-color: var(--lightgreen);
+  position: relative;
+  transition: all .3s;
+}
+.nav_list:hover {
+  background-color: var(--lightgreen);
+}
+.nav_list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--darkgreen);
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  transition: all .3s;
+}
+.nav_list a:hover {
+  background-color: var(--darkgreen);
+  color: white;
+}
+.current a{
+  color: black;
+}
+.dd_lists {
+  visibility: hidden; /*デフォルトでは非表示の状態にしておく*/
+  opacity: 0;         /*不透明度0*/
+  transition: all .3s;/*表示の変化を0.3秒に指定*/
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  top: 50px;
+  left: 0;
+}
+.nav_list:hover .dd_lists {
+  visibility: visible;  /*ナビメニューにホバーしたら表示*/
+  opacity: 1;           /*不透明度1*/
+}
+.dd_list {  /* サブドロップダウンメニュー背景 */
+  background-color: var(--darkgreen);
+  height: 50px;
+  transition: all .3s;
+  position: relative;
+  z-index: 0;
+}
+.dd_list:before{  /* サブドロップダウンメニュー区切り線 */
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--lightgreen);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.dd_list a {  /* サブドロップダウンメニュー文字 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.dd_list a:hover {  /* サブドロップダウンメニューのホバー時 */
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+}
+.dd_list a:hover::before {  /* サブドロップダウンメニューのホバー時区切り線 */
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--darkgreen);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* 見出し文字装飾 */
+h1 {
+  font-size: x-large;
+  margin: 5px 0px;
+  padding: 5px 0px;
+  color: black;
+  border-top: 2px dotted var(--lightgreen);
+}
+h2 {
+  font-size: larger;
+  margin: 5px 0px;
+  padding: 5px 0px;
+  color: black;
+  border-top: 2px dotted var(--lightgreen);
+}
+h3 {
+  font-size: large;
+  margin: 5px 0px;
+  color: black;
+  border-top: 2px dotted var(--lightgreen);
+}
+h4 {
+  font-size: medium;
+}
+/*　h4の修飾分岐 */
+.h4home {
+  margin: 0px 0px 10px 0px;
+  padding: 5px 10px;
+  background: linear-gradient(to right, #808080, white);
+  color: #dcdcdc;
+}
+.h4other {
+  margin: 0px 0px 10px 0px;
+  padding: 5px 10px;
+  background: #808080;
+  border-radius: 15px;
+  color: #dcdcdc;
+}
+
+/*　フキダシ */
+.news {
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  background: #ba3204;
+  border-radius: 15px;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  align-items: center;
+} 
+.news::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 15px solid #ba3204;
+  border-left: 30px solid transparent;
+  border-right: -20px solid transparent;
+  width: 0;
+  height: 0;
+}
+/* 横並びにするとき */
+.flex {
+  display: flex;
+}
+/* 横中央そろえ */
+.flex_center {
+  display: flex;
+  justify-content: space-between;
+}
+.center {
+  flex: 1; 
+  flex-direction: column; /* 縦方向の配置 */ 
+  align-items: center; /* 縦方向の中央揃え */ 
+  text-align: center; /* テキストの中央揃え */ 
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: black;
+}
+span {
+  color: white;
+  padding-right: 10px;
+}
+  
+
+
