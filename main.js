@@ -1,11 +1,6 @@
 // GitHub Pages用にheader.htmlのパスを計算
 const basePath = "/hp/"; // GitHub Pagesのプロジェクトルート
-const currentPath = window.location.pathname;
-const relativePath = currentPath.startsWith(basePath) 
-  ? currentPath.slice(basePath.length) // プロジェクトルート以降のパス
-  : currentPath;
-const depth = (relativePath.match(/\//g) || []).length;
-const headerPath = basePath + 'header.html'; // 必ずプロジェクトルートを起点にする
+const headerPath = basePath + 'header.html'; // プロジェクトルートを基準に固定パス
 
 // DOM読み込み完了後に動作
 document.addEventListener("DOMContentLoaded", () => {
