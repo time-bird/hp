@@ -3,6 +3,29 @@ const currentPath = window.location.pathname;
 const depth = (currentPath.match(/\//g) || []).length - 1;
 const headerPath = './' + '../'.repeat(depth) + 'header.html';
 
+// #headerの存在を確認してから動作
+document.addEventListener("DOMContentLoaded", () => {
+  const includeHeader = new XMLHttpRequest();
+  includeHeader.open("GET", headerPath, true);
+  includeHeader.onreadystatechange = function () {
+    if (includeHeader.readyState === 4) {
+      if (includeHeader.status === 200) {
+        const headerHTML = includeHeader.responseText;
+        const header = document.querySelector("#header");
+        if (header) {
+          header.insertAdjacentHTML("afterbegin", headerHTML);
+          console.log("Header loaded successfully:", headerPath);
+        } else {
+          console.error("#header element not found in DOM.");
+        }
+      } else {
+        console.error(`Failed to load header.html: ${headerPath} (status: ${includeHeader.status})`);
+      }
+    }
+  };
+  includeHeader.send();
+});
+
 // ヘッダーを動的にインクルード
 const includeHeader = new XMLHttpRequest();
 includeHeader.open("GET", headerPath, true);
