@@ -41,9 +41,9 @@ includeHeader.onreadystatechange = function () {
       const originalPath = link.getAttribute("href") || link.getAttribute("src");
       if (originalPath && !originalPath.startsWith("http") && !originalPath.startsWith("#")) {
         const adjustedPath = './' + '../'.repeat(depth) + originalPath.replace(/^\//, '');
-        if (link.tagName === "A") {
+        if (link.tagName === "a") {
           link.setAttribute("href", adjustedPath);
-        } else if (link.tagName === "IMG") {
+        } else if (link.tagName === "img") {
           link.setAttribute("src", adjustedPath);
         }
       }
