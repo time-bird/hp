@@ -1,8 +1,11 @@
 // GitHub Pages用にheader.htmlのパスを計算
-const basePath = "/hp/";
+const basePath = "/hp/"; // GitHub Pagesのプロジェクトルート
 const currentPath = window.location.pathname;
-const depth = (currentPath.replace(basePath, "").match(/\//g) || []).length - 1;
-const headerPath = basePath + '../'.repeat(depth) + 'header.html';
+const relativePath = currentPath.startsWith(basePath) 
+  ? currentPath.slice(basePath.length) // プロジェクトルート以降のパス
+  : currentPath;
+const depth = (relativePath.match(/\//g) || []).length;
+const headerPath = basePath + 'header.html'; // 必ずプロジェクトルートを起点にする
 
 // DOM読み込み完了後に動作
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
           links.forEach(link => {
             const originalPath = link.getAttribute("href") || link.getAttribute("src");
             if (originalPath && !originalPath.startsWith("http") && !originalPath.startsWith("#")) {
-              const adjustedPath = './' + '../'.repeat(depth) + originalPath.replace(/^\//, '');
+              const adjustedPath = basePath + originalPath.replace(/^\//, '');
               if (link.tagName === "A") {
                 link.setAttribute("href", adjustedPath);
               } else if (link.tagName === "IMG") {
