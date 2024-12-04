@@ -1,7 +1,8 @@
-// 動的にheader.htmlのパスを決定
+// GitHub Pages用にheader.htmlのパスを計算
+const basePath = "/hp/";
 const currentPath = window.location.pathname;
-const depth = (currentPath.match(/\//g) || []).length - 1;
-const headerPath = './' + '../'.repeat(depth) + 'header.html';
+const depth = (currentPath.replace(basePath, "").match(/\//g) || []).length - 1;
+const headerPath = basePath + '../'.repeat(depth) + 'header.html';
 
 // DOM読み込み完了後に動作
 document.addEventListener("DOMContentLoaded", () => {
