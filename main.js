@@ -1,7 +1,9 @@
 // 動的にheader.htmlのパスを決定
-const depth = (window.location.pathname.match(/\//g) || []).length - 1;
-const headerPath = '../'.repeat(depth) + 'header.html';
+const currentPath = window.location.pathname;
+const depth = (currentPath.match(/\//g) || []).length - 1;
+const headerPath = './' + '../'.repeat(depth) + 'header.html';
 
+// ヘッダーを動的にインクルード
 const includeHeader = new XMLHttpRequest();
 includeHeader.open("GET", headerPath, true);
 includeHeader.onreadystatechange = function () {
@@ -10,13 +12,27 @@ includeHeader.onreadystatechange = function () {
     const header = document.querySelector("#header");
     header.insertAdjacentHTML("afterbegin", headerHTML);
 
+    // 動的にリンクパスを補正
+    const links = header.querySelectorAll("a, img");
+    links.forEach(link => {
+      const originalPath = link.getAttribute("href") || link.getAttribute("src");
+      if (originalPath && !originalPath.startsWith("http") && !originalPath.startsWith("#")) {
+        const adjustedPath = './' + '../'.repeat(depth) + originalPath.replace(/^\//, '');
+        if (link.tagName === "A") {
+          link.setAttribute("href", adjustedPath);
+        } else if (link.tagName === "IMG") {
+          link.setAttribute("src", adjustedPath);
+        }
+      }
+    });
+
     // すべての `current` クラスを削除
     const allNavItems = header.querySelectorAll('.nav_list');
     allNavItems.forEach(item => {
       item.classList.remove('current');
     });
 
-    // currentクラスを適用するロジック（前回の修正内容を再利用）
+    // 現在のページに応じて`current`クラスを設定
     const currentFullPath = window.location.pathname;
     const navLinks = header.querySelectorAll('.nav_list > a');
 
