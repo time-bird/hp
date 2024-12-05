@@ -146,11 +146,10 @@ body {
   cursor: pointer;
   margin-left: auto;
 }
-
 .hamburger span {
   display: block;
   height: 3px;
-  width: 35px;
+  width: 25px;
   background-color: var(--darkgreen);
   border-radius: 3px;
   transition: all 0.3s;
@@ -173,7 +172,7 @@ h2 {
 }
 h3 {
   font-size: large;
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px;
   padding: 5px 10px;
   color: black;
   background: linear-gradient(to right, var(--lightgreen), white);
@@ -209,7 +208,6 @@ span { /* Home内使用時 */
   padding-left: 10px;
 }
 
-
 /*　フキダシ */
 .news {
   margin-left: 10px;
@@ -237,16 +235,23 @@ span { /* Home内使用時 */
   width: 0;
   height: 0;
 }
-/* 横並びにするとき */
+
+/* 横並び：左寄せ */
 .flex {
   display: flex;
   align-items: center;
 }
-/* 横中央そろえ */
-.flex_center {
+/* 横並び：両端揃え */
+.flex_sb {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
+}
+/* 横並び：両端揃え：スマホでも */
+.flex_sbsp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .tate_center {
   flex: 1;
@@ -254,7 +259,6 @@ span { /* Home内使用時 */
   align-items: center;    /* 縦方向の中央揃え */ 
   text-align: center;     /* テキストの中央揃え */ 
 }
-
 .space {
   width: 50px;
   height: 100%;
@@ -288,7 +292,7 @@ p {
   #header {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }  
   .title {
     padding-left: 10px;
@@ -331,12 +335,14 @@ p {
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
   }  
-  .flex_center {
+  .flex_sb {
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
   }
-  .space {
-    display: none; /* 子要素間のスペースを非表示にする */
+  .space { /* 縦並び子要素間：ラインと隙間 */
+    margin: 10px 0px;
+    border: 1px;
+    border-color: black;
   }
   .h4home { /* HOMEのグレーグラデーション無し */
     margin: 0px 0px 10px 0px;
@@ -344,7 +350,11 @@ p {
     background: #808080;
     border-radius: 15px;
     color: white;
-  } 
+  }
+  .leftspace {
+    margin-left: 0px;
+  }
+  
 }
 
 
