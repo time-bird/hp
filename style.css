@@ -214,7 +214,6 @@ span { /* Home内使用時 */
 .news {
   display: inline-block;
   position: relative;
-  margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 12px;
   padding: 5px 10px;
@@ -350,7 +349,10 @@ p {
   .leftspace {
     margin-left: 0px;
   }
-  
+  .img_right {
+    margin-left: 0px; 
+    display: block;
+  }  
 }
 
 
