@@ -1,6 +1,6 @@
 // GitHub Pages用にheader.htmlのパスを計算
 const basePath = "/hp/"; // GitHub Pagesのプロジェクトルート
-const headerPath = basePath + 'header.html'; // プロジェクトルートを基準に固定パス
+const headerPath = basePath + "header.html"; // プロジェクトルートを基準に固定パス
 
 // DOM読み込み完了後に動作
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
           links.forEach(link => {
             const originalPath = link.getAttribute("href") || link.getAttribute("src");
             if (originalPath && !originalPath.startsWith("http") && !originalPath.startsWith("#")) {
-              const adjustedPath = basePath + originalPath.replace(/^\//, '');
+              const adjustedPath = basePath + originalPath.replace(/^\//, "");
               if (link.tagName === "A") {
                 link.setAttribute("href", adjustedPath);
               } else if (link.tagName === "IMG") {
@@ -30,28 +30,28 @@ document.addEventListener("DOMContentLoaded", () => {
           });
 
           // すべての `current` クラスを削除
-          const allNavItems = header.querySelectorAll('.nav_list');
+          const allNavItems = header.querySelectorAll(".nav_list");
           allNavItems.forEach(item => {
-            item.classList.remove('current');
+            item.classList.remove("current");
           });
 
           // 現在のページに応じて`current`クラスを設定
           const currentFullPath = window.location.pathname;
-          const navLinks = header.querySelectorAll('.nav_list > a');
+          const navLinks = header.querySelectorAll(".nav_list > a");
 
           navLinks.forEach(link => {
-            const linkFullPath = new URL(link.getAttribute('href'), window.location.origin).pathname;
+            const linkFullPath = new URL(link.getAttribute("href"), window.location.origin).pathname;
 
-            if ((currentFullPath === '/' || currentFullPath.endsWith('index.html')) && linkFullPath.endsWith('index.html')) {
-              link.parentElement.classList.add('current');
+            if ((currentFullPath === "/" || currentFullPath.endsWith("index.html")) && linkFullPath.endsWith("index.html")) {
+              link.parentElement.classList.add("current");
             } else if (currentFullPath === linkFullPath) {
-              link.parentElement.classList.add('current');
+              link.parentElement.classList.add("current");
             } else {
-              const subLinks = link.parentElement.querySelectorAll('.dd_list a');
+              const subLinks = link.parentElement.querySelectorAll(".dd_list a");
               subLinks.forEach(subLink => {
-                const subLinkFullPath = new URL(subLink.getAttribute('href'), window.location.origin).pathname;
+                const subLinkFullPath = new URL(subLink.getAttribute("href"), window.location.origin).pathname;
                 if (currentFullPath === subLinkFullPath) {
-                  link.parentElement.classList.add('current');
+                  link.parentElement.classList.add("current");
                 }
               });
             }

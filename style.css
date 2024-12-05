@@ -6,6 +6,7 @@
   --darkgray: #555555;
   --gray: #808080;
   --lightgray: #dcdcdc;
+  --red: #ba3204;
 }
 
 body, ul, li {  /* スタイル初期化 */
@@ -148,10 +149,10 @@ body {
 }
 .hamburger span {
   display: block;
-  height: 3px;
-  width: 25px;
+  height: 4px;
+  width: 20px;
   background-color: var(--darkgreen);
-  border-radius: 3px;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 
@@ -162,6 +163,7 @@ h1 {
   padding: 5px 0px;
   color: black;
   border-top: 2px dotted var(--lightgreen);
+  flex-grow: 1;
 }
 h2 {
   font-size: larger;
@@ -184,27 +186,27 @@ h4 {
 .h4home {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
-  background: linear-gradient(to right, #808080, white);
+  background: linear-gradient(to right, var(--gray), white);
   color: white;
 }
 .h4other {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
-  background: #808080;
+  background: var(--gray);
   border-radius: 15px;
   color: white;
 }
 .h4othersub {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
-  background: #808080;
+  background: var(--gray);
   border-radius: 15px;
   color: white;
   width: fit-content;
   height: fit-content;
 }
 span { /* Home内使用時 */
-  color: #dcdcdc;
+  color: var(--lightgray);
   padding-left: 10px;
 }
 
@@ -216,7 +218,7 @@ span { /* Home内使用時 */
   margin-top: 30px;
   margin-bottom: 12px;
   padding: 5px 10px;
-  background: #ba3204;
+  background: var(--red);
   border-radius: 15px;
   color: white;
   font-size: medium;
@@ -229,7 +231,7 @@ span { /* Home内使用時 */
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  border-top: 15px solid #ba3204;
+  border-top: 15px solid var(--red);
   border-left: 30px solid transparent;
   border-right: -20px solid transparent;
   width: 0;
@@ -247,12 +249,6 @@ span { /* Home内使用時 */
   justify-content: space-between;
   align-items: center;
 }
-/* 横並び：両端揃え：スマホでも */
-.flex_sbsp {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .tate_center {
   flex: 1;
   flex-direction: column; /* 縦方向の配置 */
@@ -266,9 +262,9 @@ span { /* Home内使用時 */
 .leftspace {
   margin-left: 20px;
 }
-.img-right {
+.img_right {
   margin-left: auto; 
-  display:block;
+  display: block;
 }
 
 a {
@@ -341,13 +337,13 @@ p {
   }
   .space { /* 縦並び子要素間：ラインと隙間 */
     margin: 10px 0px;
-    border: 1px;
-    border-color: black;
+    height: 1px;
+    background-color: var(--darkgray);
   }
   .h4home { /* HOMEのグレーグラデーション無し */
     margin: 0px 0px 10px 0px;
     padding: 5px 10px;
-    background: #808080;
+    background: var(--gray);
     border-radius: 15px;
     color: white;
   }
