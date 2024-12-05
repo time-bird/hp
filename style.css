@@ -212,10 +212,10 @@ span { /* Home内使用時 */
 
 /*　フキダシ */
 .news {
-  margin-left: 10px;
   display: inline-block;
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
   margin-bottom: 12px;
   padding: 5px 10px;
   background: var(--red);
