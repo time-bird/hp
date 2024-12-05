@@ -164,27 +164,27 @@ h4 {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
   background: linear-gradient(to right, #808080, white);
-  color: #dcdcdc;
+  color: white;
 }
 .h4other {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
   background: #808080;
   border-radius: 15px;
-  color: #dcdcdc;
+  color: white;
 }
 .h4othersub {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
   background: #808080;
   border-radius: 15px;
-  color: #dcdcdc;
+  color: white;
   width: fit-content;
   height: fit-content;
 }
 span { /* Home内使用時 */
-  color: white;
-  padding-right: 10px;
+  color: #dcdcdc;
+  padding-left: 10px;
 }
 
 
@@ -258,8 +258,8 @@ p {
 /* スマホ画面対応：767px以下の場合 */
 @media (max-width: 767px) {
   #main {
-    margin-left: 0;    /* 左側マージンを自動的に空ける */
-    margin-right: 0;   /* 右側マージンを自動的に空ける */
+    margin-left: auto;    /* 左側マージンを自動的に空ける */
+    margin-right: auto;   /* 右側マージンを自動的に空ける */
     width: 95%;           /* 幅を決定する */
     font-family: sans-serif;
   }  
@@ -274,6 +274,13 @@ p {
   .space {
     display: none; /* 子要素間のスペースを非表示にする */
   }
+  .h4home { /* HOMEのグレーグラデーション無し */
+    margin: 0px 0px 10px 0px;
+    padding: 5px 10px;
+    background: #808080;
+    color: white;
+  }
+  
 }
 
 
