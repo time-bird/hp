@@ -258,9 +258,9 @@ p {
 /* スマホ画面対応：767px以下の場合 */
 @media (max-width: 767px) {
   #main {
-    margin-left: auto;    /* 左側マージンを自動的に空ける */
-    margin-right: auto;   /* 右側マージンを自動的に空ける */
-    width: 100%;           /* 幅を決定する */
+    margin-left: 0;    /* 左側マージンを自動的に空ける */
+    margin-right: 0;   /* 右側マージンを自動的に空ける */
+    width: 95%;           /* 幅を決定する */
     font-family: sans-serif;
   }  
   .flex {
