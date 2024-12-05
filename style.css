@@ -42,6 +42,10 @@ body {
   font-weight: bolder;
   color: var(--darkgreen);
 }
+.iconsize {
+  width: 80px;
+  height: 80px;
+}
 /* メニューバー */
 .nav_wrap {
   text-align: center;
@@ -132,6 +136,23 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+}
+/* ハンバーガーメニューのスタイル */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: var(--darkgreen);
+  border-radius: 3px;
+  transition: all 0.3s;
 }
 
 /* 見出し文字装飾 */
@@ -262,7 +283,40 @@ p {
     margin-right: auto;   /* 右側マージンを自動的に空ける */
     width: 95%;           /* 幅を決定する */
     font-family: sans-serif;
+  }
+  .title {
+    padding-left: 10px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: var(--darkgreen);
+  }
+  .iconsize {
+    width: 50px;
+    height: 50px;
   }  
+  .nav_wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  .nav_wrap.active {
+    display: block;
+    transform: translateX(0);
+  }
+  .hamburger {
+    display: flex;
+  }
+
   .flex {
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
@@ -278,9 +332,9 @@ p {
     margin: 0px 0px 10px 0px;
     padding: 5px 10px;
     background: #808080;
+    border-radius: 15px;
     color: white;
-  }
-  
+  } 
 }
 
 

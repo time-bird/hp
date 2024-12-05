@@ -56,6 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
               });
             }
           });
+
+          // ハンバーガーメニューの動作を追加
+          const hamburger = header.querySelector("#hamburger_menu");
+          const nav = header.querySelector("#mobile_nav");
+
+          if (hamburger && nav) {
+            hamburger.addEventListener("click", function () {
+              nav.classList.toggle("active");
+            });
+          }
         } else {
           console.error("#header element not found in DOM.");
         }
