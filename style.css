@@ -51,7 +51,7 @@ body {
 }
 /* メニューバー */
 .nav_wrap {
-  width: 100%;
+  flex-grow: 1;
   text-align: center;
 }
 .nav_lists {
