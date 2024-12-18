@@ -183,6 +183,9 @@ h3 {
 h4 {
   font-size: medium;
 }
+.h1center {
+  text-align: center;
+}
 /*　h4の修飾分岐 */
 .h4home {
   margin: 0px 0px 10px 0px;
@@ -241,7 +244,6 @@ span { /* Home内使用時 */
 /* 横並び：左寄せ */
 .flex {
   display: flex;
-  align-items: center;
 }
 /* 横並び：両端揃え */
 .flex_sb {
