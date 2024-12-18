@@ -39,7 +39,7 @@ body {
   margin: 10px 0px;
 }
 .title {
-  padding-left: 10px;
+  padding: 0px 10px;
   font-size: 40px;
   font-weight: bolder;
   color: var(--darkgreen);
