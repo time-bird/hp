@@ -51,12 +51,12 @@ body {
 }
 /* メニューバー */
 .nav_wrap {
+  flex: auto;
   width: 100%;
   text-align: center;
 }
 .nav_lists {
   display: flex;
-  flex-grow: 1;
   list-style: none;
 }
 .nav_list {
