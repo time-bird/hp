@@ -39,7 +39,7 @@ body {
   margin: 10px 0px;
 }
 .title {
-  flex: none;
+  white-space: nowrap;
   padding: 0px 10px;
   font-size: 40px;
   font-weight: bolder;
@@ -51,6 +51,7 @@ body {
 }
 /* メニューバー */
 .nav_wrap {
+  flex-grow: 1;
   width: 100%;
   text-align: center;
 }
@@ -59,11 +60,11 @@ body {
   list-style: none;
 }
 .nav_list {
-  flex-grow: 1;
   height: 50px;
   background-color: var(--lightgreen);
   position: relative;
   transition: all .3s;
+  padding: 0px 5px;
 }
 .nav_list:hover {
   color: white;
