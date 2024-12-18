@@ -50,6 +50,7 @@ body {
 }
 /* メニューバー */
 .nav_wrap {
+  width: 100%;
   text-align: center;
 }
 .nav_lists {
@@ -57,7 +58,7 @@ body {
   list-style: none;
 }
 .nav_list {
-  width: 25%;
+  flex-grow: 1;
   height: 50px;
   background-color: var(--lightgreen);
   position: relative;
