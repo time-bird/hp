@@ -39,6 +39,7 @@ body {
   margin: 10px 0px;
 }
 .title {
+  flex: none;
   padding: 0px 10px;
   font-size: 40px;
   font-weight: bolder;
