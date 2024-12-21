@@ -58,17 +58,13 @@ body {
 .nav_lists {
   display: flex;
   list-style: none;
+  background-color: white;
 }
 .nav_list {
-  flex-grow: 1;
+  width: 25%;
   height: 50px;
-  background-color: var(--lightgreen);
   position: relative;
   transition: all .3s;
-}
-.nav_list:hover {
-  color: white;
-  background-color: rgba(34, 139, 34, 0.5);
 }
 .nav_list a {
   display: flex;
@@ -78,7 +74,7 @@ body {
   height: 100%;
   text-decoration: none;
   color: var(--darkgreen);
-  font-size: 15px;
+  font-size: medium;
   letter-spacing: 0.05em;
   font-weight: bold;
   transition: all .3s;
@@ -86,6 +82,7 @@ body {
 .nav_list a:hover {
   background-color: var(--darkgreen);
   color: var(--lightgreen);
+  border-radius: 10px;
 }
 .current a{
   color: black;
@@ -105,7 +102,7 @@ body {
   opacity: 1;           /*不透明度1*/
 }
 .dd_list {  /* サブドロップダウンメニュー背景 */
-  background-color: var(--lightgreen);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 50px;
   transition: all .3s;
   position: relative;
@@ -113,7 +110,7 @@ body {
 }
 .dd_list:before{  /* サブドロップダウンメニュー区切り線 */
   content: "";
-  width: 100%;
+  width: 90%;
   height: 1px;
   background-color: var(--darkgreen);
   position: absolute;
@@ -133,10 +130,11 @@ body {
 .dd_list a:hover {  /* サブドロップダウンメニューのホバー時 */
   background-color: var(--darkgreen);
   color: var(--lightgreen);
+  border-radius: 10px;
 }
 .dd_list a:hover::before {  /* サブドロップダウンメニューのホバー時区切り線 */
   content: "";
-  width: 100%;
+  width: 90%;
   height: 1px;
   background-color: var(--darkgreen);
   position: absolute;
