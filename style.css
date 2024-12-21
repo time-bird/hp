@@ -124,7 +124,7 @@ body {
 .dd_list a {  /* サブドロップダウンメニュー文字 */
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   color: var(--darkgreen);
   text-decoration: none;
   position: relative;
@@ -165,58 +165,47 @@ body {
 /* 見出し文字装飾 */
 h1 {
   font-size: x-large;
-  margin: 5px 0px;
-  padding: 5px 0px;
+  margin: 0px;
+  padding: 3px 17px;
   color: black;
-  border-top: 2px dotted var(--lightgreen);
-  flex-grow: 1;
+  background-color: white;
+  width: fit-content;
+  border-radius: 20px;
 }
 h2 {
   font-size: larger;
-  margin: 5px 0px;
-  padding: 5px 0px;
+  margin: 0px;
+  padding: 3px 15px;
   color: black;
-  border-top: 2px dotted var(--lightgreen);
+  background-color: white;
+  width: fit-content;
+  border-radius: 20px;
 }
 h3 {
   font-size: large;
-  margin: 10px 0px;
-  padding: 5px 10px;
-  color: black;
-  background: linear-gradient(to right, var(--lightgreen), white);
+  margin: 0px;
+  padding: 3px 13px;
+  color: white;
+  background-color: var(--darkgreen);
+  width: fit-content;
+  border-radius: 20px;
 }
-h4 {
+h4 {  /* 見出し下の説明文 */
   font-size: medium;
+  margin: 5px 10px 0px 0px;
+  padding-left: 5px;
+  color: var(--darkgreen);
+  border-bottom: 2px dotted var(--darkgreen);
 }
 .h1center {
   text-align: center;
 }
-/*　h4の修飾分岐 */
-.h4home {
-  margin: 0px 0px 10px 0px;
-  padding: 5px 10px;
-  background: linear-gradient(to right, var(--gray), white);
-  color: white;
-}
-.h4other {
-  margin: 0px 0px 10px 0px;
-  padding: 5px 10px;
-  background: var(--gray);
-  border-radius: 15px;
-  color: white;
-}
-.h4othersub {
-  margin: 0px 0px 10px 0px;
-  padding: 5px 10px;
-  background: var(--gray);
-  border-radius: 15px;
-  color: white;
-  width: fit-content;
-  height: fit-content;
-}
-span { /* Home内使用時 */
-  color: var(--lightgray);
-  padding-left: 10px;
+
+/*　個別ページ背景色 */
+.back {
+  background-color: var(--lightgreen);
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /*　フキダシ */
@@ -246,9 +235,13 @@ span { /* Home内使用時 */
   height: 0;
 }
 
-/* 横並び：左寄せ */
+/* 横並び：左寄せ：薄緑色バック */
 .flex {
   display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: var(--lightgreen);
+  border-radius: 10px;
 }
 /* 横並び：両端揃え */
 .flex_sb {
@@ -256,11 +249,13 @@ span { /* Home内使用時 */
   justify-content: space-between;
   align-items: center;
 }
-.tate_center {
-  flex: 1;
-  flex-direction: column; /* 縦方向の配置 */
-  align-items: center;    /* 縦方向の中央揃え */ 
-  text-align: center;     /* テキストの中央揃え */ 
+/* 横並び：左寄せ：白バック */
+.flex_white {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 10px;
 }
 .space {
   width: 50px;
@@ -273,13 +268,16 @@ span { /* Home内使用時 */
   margin-left: auto; 
   display: block;
 }
+.text_right {
+  text-align: right;
+  color: black;
+}
 
 a {
   text-decoration: none;
 }
 p {
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin: 5px 0px;
   color: black;
   line-height: 160%;
 }
