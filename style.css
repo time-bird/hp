@@ -59,7 +59,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  background-color: #e6ec99;
+  background-color: white;
 }
 .nav_list {
   width: 100%;
@@ -125,6 +125,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 100%;
   color: var(--darkgreen);
   text-decoration: none;
   position: relative;
