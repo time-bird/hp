@@ -332,8 +332,16 @@ p {
   }
   .nav_lists {
     flex-direction: column;
-    list-style: none;
+    list-style: disc;
+    width: 100%;
+    text-align: center;
   }
+  .dd_lists {
+    visibility: visible; /* スマホでは親メニューと一緒に表示する */
+    list-style: disc;
+    width: 100%;
+    text-align: center;
+  }  
 
   .flex {
     flex-direction: column; /* 子要素を縦並びにする */
