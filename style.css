@@ -70,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
   height: 100%;
   text-decoration: none;
   color: var(--darkgreen);
@@ -82,7 +82,7 @@ body {
 .nav_list a:hover {
   background-color: var(--darkgreen);
   color: var(--lightgreen);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .current a{
   color: black;
@@ -102,22 +102,23 @@ body {
   opacity: 1;           /*不透明度1*/
 }
 .dd_list {  /* サブドロップダウンメニュー背景 */
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   height: 50px;
   transition: all .3s;
   position: relative;
   z-index: 0;
 }
-.dd_list:before{  /* サブドロップダウンメニュー区切り線 */
+/*  サブドロップダウンメニュー区切り線
+.dd_list:before{
   content: "";
-  width: 90%;
+  width: 100%;
   height: 1px;
   background-color: var(--darkgreen);
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-}
+} */
 .dd_list a {  /* サブドロップダウンメニュー文字 */
   display: flex;
   justify-content: center;
@@ -130,9 +131,10 @@ body {
 .dd_list a:hover {  /* サブドロップダウンメニューのホバー時 */
   background-color: var(--darkgreen);
   color: var(--lightgreen);
-  border-radius: 10px;
+  border-radius: 15px;
 }
-.dd_list a:hover::before {  /* サブドロップダウンメニューのホバー時区切り線 */
+/* サブドロップダウンメニューのホバー時区切り線
+.dd_list a:hover::before {  
   content: "";
   width: 90%;
   height: 1px;
@@ -141,7 +143,7 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-}
+} */
 /* ハンバーガーメニューのスタイル */
 .hamburger {
   display: none;
@@ -333,22 +335,28 @@ p {
   .flex {
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--lightgreen);
+    border-radius: 5px;
+  
   }  
   .flex_sb {
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
   }
+  .flex_white {
+    flex-direction: column; /* 子要素を縦並びにする */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
   .space { /* 縦並び子要素間：ラインと隙間 */
     margin: 10px 0px;
     height: 1px;
     background-color: var(--darkgray);
-  }
-  .h4home { /* HOMEのグレーグラデーション無し */
-    margin: 0px 0px 10px 0px;
-    padding: 5px 10px;
-    background: var(--gray);
-    border-radius: 15px;
-    color: white;
   }
   .leftspace {
     margin-left: 0px;
