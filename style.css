@@ -74,7 +74,7 @@ body {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  line-height: normal;
+  line-height: 1.1;
   color: var(--darkgreen);
   font-size: medium;
   letter-spacing: 0.05em;
@@ -84,7 +84,6 @@ body {
 .nav_list a:hover {
   background-color: var(--darkgreen);
   color: var(--lightgreen);
-  border-radius: 15px;
 }
 .current a{
   color: black;
@@ -110,7 +109,7 @@ body {
   position: relative;
   z-index: 0;
 }
-/*  サブドロップダウンメニュー区切り線
+/* サブドロップダウンメニュー区切り線 */
 .dd_list:before{
   content: "";
   width: 100%;
@@ -120,12 +119,11 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-} */
+}
 .dd_list a {  /* サブドロップダウンメニュー文字 */
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 100%;
   color: var(--darkgreen);
   text-decoration: none;
   position: relative;
@@ -134,7 +132,6 @@ body {
 .dd_list a:hover {  /* サブドロップダウンメニューのホバー時 */
   background-color: var(--darkgreen);
   color: var(--lightgreen);
-  border-radius: 15px;
 }
 /* サブドロップダウンメニューのホバー時区切り線
 .dd_list a:hover::before {  
@@ -159,7 +156,7 @@ body {
 .hamburger span {
   display: block;
   height: 4px;
-  width: 20px;
+  width: 22px;
   background-color: var(--darkgreen);
   border-radius: 4px;
   transition: all 0.3s;
@@ -336,12 +333,25 @@ p {
     width: 100%;
     text-align: center;
   }
-  .dd_lists {
-    visibility: visible; /* スマホでは親メニューと一緒に表示する */
-    list-style: disc;
+  /* ハンバーガーメニューの展開時にサブメニューを表示 */
+  .nav_wrap.active .dd_lists {
+    visibility: visible;
+    opacity: 1;
+    max-height: 200px; /* 必要に応じて高さを調整 */
+  }
+  /* サブメニュー項目の配置調整 */
+  .dd_list a {
+    display: block;
     width: 100%;
+    padding: 10px 0px; /* 適切な余白を設定 */
     text-align: center;
-  }  
+    color: var(--lightgreen);
+  }
+   /* 親メニューとサブメニュー間の余白 */
+   .nav_list:hover .dd_lists,
+   .nav_wrap.active .nav_list .dd_lists {
+      margin-top: 5px; /* 親メニューの直下に配置 */
+   }
 
   .flex {
     flex-direction: column; /* 子要素を縦並びにする */
