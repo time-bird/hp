@@ -127,10 +127,11 @@ body {
 .dd_list a {  /* サブドロップダウンメニュー文字 */
   display: flex;
   width: 100%;
-  padding: 0;
+  height: 100%;
+  padding: 5px;
   color: var(--darkgreen);
   justify-content: center;
-  text-align: center;
+  align-items: center;
   text-decoration: none;
   position: relative;
   box-sizing: border-box;
