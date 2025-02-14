@@ -108,6 +108,10 @@ body {
   transition: all .3s;
   position: relative;
   z-index: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 /* サブドロップダウンメニュー区切り線 */
 .dd_list:before{
@@ -123,17 +127,19 @@ body {
 .dd_list a {  /* サブドロップダウンメニュー文字 */
   display: block;
   width: 100%;
-  padding: 10px 0px;
+  padding: 0px 5px;
   justify-content: center;
   text-align: center;
   color: var(--darkgreen);
   text-decoration: none;
   position: relative;
+  box-sizing: border-box;
 }
 .dd_list a:hover {  /* サブドロップダウンメニューのホバー時 */
   background-color: var(--darkgreen);
   color: var(--lightgreen);
   width: 100%;
+  box-sizing: border-box;
 }
 /* サブドロップダウンメニューのホバー時区切り線
 .dd_list a:hover::before {  
