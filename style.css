@@ -212,13 +212,13 @@ h4 {  /* 見出し下の説明文 */
 }
 .title {  /* 個別紹介ページのタイトル（画像付き） */
   display: flex;
+  height: 60px;
   align-items: last baseline;
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 100px;
   position: relative;
-  line-height: 1;
 }
 .title_img {  /* 個別紹介ページのタイトル画像 */
   height: 100px;
