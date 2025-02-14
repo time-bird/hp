@@ -210,27 +210,28 @@ h4 {  /* 見出し下の説明文 */
 .h1center {
   text-align: center;
 }
-.h1deco_wrapper {  /* 画像＋見出しを包むコンテナ */
+.h1deco_wrapper {  /* 個別紹介ページの見出し：画像＋見出しを包むコンテナ */
   position: relative; /* 見出しの absolute 配置の基準 */
   display: inline-block; /* 必要に応じて調整 */
 }
-.h1deco_img {  /* 個別紹介ページのタイトル画像 */
+.h1deco_img {  /* 画像 */
+  width: 100px;
   height: 100px;
-  width: auto;
   position: relative; /* 画像が基準 */
   border: 5px solid var(--lightgreen);
   border-radius: 50%;
 }
-.h1deco {  /* 個別紹介ページのタイトル（画像付き） */
+.h1deco {  /* 見出し */
   position: absolute;
   bottom: 0; /* 画像の下に合わせる */
-  left: 60px; /* 画像より右に配置 */
+  left: 80px; /* 画像より右に配置 */
   background-color: white;
   padding: 5px 15px;
   border-radius: 20px;
   font-size: x-large;
   margin: 0;
   z-index: 10; /* 画像の上に乗せる */
+  white-space: nowrap; /* 改行を防ぐ */
 }
 
 /*　個別ページ背景色 */
