@@ -121,17 +121,19 @@ body {
   z-index: 1;
 }
 .dd_list a {  /* サブドロップダウンメニュー文字 */
-  display: flex;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
   justify-content: center;
   text-align: center;
   color: var(--darkgreen);
   text-decoration: none;
   position: relative;
-  padding: 0px 5px;
 }
 .dd_list a:hover {  /* サブドロップダウンメニューのホバー時 */
   background-color: var(--darkgreen);
   color: var(--lightgreen);
+  width: 100%;
 }
 /* サブドロップダウンメニューのホバー時区切り線
 .dd_list a:hover::before {  
