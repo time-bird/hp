@@ -126,7 +126,7 @@ body {
   z-index: 1;
 }
 .dd_list a {  /* サブドロップダウンメニュー文字 */
-  display: block;
+  display: flex;
   width: 100%;
   justify-content: center;
   text-align: center;
