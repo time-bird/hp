@@ -210,6 +210,19 @@ h4 {  /* 見出し下の説明文 */
 .h1center {
   text-align: center;
 }
+.title {  /* 個別紹介ページのタイトル（画像付き） */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding-left: 60px;
+  position: relative;
+}
+.title_img {  /* 個別紹介ページのタイトル画像 */
+  height: 40px;
+  width: auto;
+  position: absolute;
+  left: 0;
+}
 
 /*　個別ページ背景色 */
 .back {
