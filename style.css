@@ -210,17 +210,17 @@ h4 {  /* 見出し下の説明文 */
 .h1center {
   text-align: center;
 }
-.title {  /* 個別紹介ページのタイトル（画像付き） */
+.h1deco {  /* 個別紹介ページのタイトル（画像付き） */
   display: flex;
-  height: 60px;
-  align-items: last baseline;
+  height: 50px;
+  align-items: center;
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 100px;
+  padding-left: 120px;
   position: relative;
 }
-.title_img {  /* 個別紹介ページのタイトル画像 */
+.h1deco_img {  /* 個別紹介ページのタイトル画像 */
   height: 100px;
   width: auto;
   position: absolute;
