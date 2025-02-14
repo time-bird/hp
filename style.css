@@ -108,9 +108,11 @@ body {
   transition: all .3s;
   position: relative;
   z-index: 0;
+  width: 100%;
   padding: 0;
   margin: 0;
-  width: 100%;
+  justify-content: center;
+  text-align: center;
   box-sizing: border-box;
 }
 /* サブドロップダウンメニュー区切り線 */
@@ -128,8 +130,6 @@ body {
   display: block;
   width: 100%;
   padding: 0;
-  justify-content: center;
-  text-align: center;
   color: var(--darkgreen);
   text-decoration: none;
   position: relative;
