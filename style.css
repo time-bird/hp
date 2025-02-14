@@ -77,7 +77,7 @@ body {
   line-height: 1.1;
   color: var(--darkgreen);
   font-size: medium;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   font-weight: bold;
   transition: all .3s;
 }
