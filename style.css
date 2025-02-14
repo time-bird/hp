@@ -210,7 +210,7 @@ h4 {  /* 見出し下の説明文 */
 .h1center {
   text-align: center;
 }
-.h1deco_wrapper {  /* 個別紹介ページの見出し：画像＋見出しを包むコンテナ */
+.h1deco {  /* 個別紹介ページの見出し：画像＋見出しを包むコンテナ */
   position: relative; /* 見出しの absolute 配置の基準 */
   display: inline-block; /* 必要に応じて調整 */
 }
@@ -221,13 +221,13 @@ h4 {  /* 見出し下の説明文 */
   border: 5px solid var(--lightgreen);
   border-radius: 50%;
 }
-.h1deco {  /* 見出し */
+.h1deco_txt {  /* 見出し */
   position: absolute;
-  bottom: 0; /* 画像の下に合わせる */
-  left: 80px; /* 画像より右に配置 */
+  bottom: 10px; /* 画像の下に合わせる */
+  left: 90px; /* 画像より右に配置 */
   background-color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
+  padding: 5px 15px 5px 5px;  /* 上 | 右 | 下 | 左 */
+  border-radius: 0 20px 20px 0;  /* 左上 | 右上 | 右下 | 左下 */
   font-size: x-large;
   margin: 0;
   z-index: 10; /* 画像の上に乗せる */
