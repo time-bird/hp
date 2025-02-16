@@ -220,6 +220,7 @@ h4 {  /* 見出し下の説明文 */
   position: relative; /* 画像が基準 */
   border-radius: 50%;
   border: 3px solid var(--darkgreen);
+  z-index: 1; /* 重ね順：上 */
 }
 .h1deco_txt {  /* 見出し */
   position: absolute;
@@ -230,9 +231,9 @@ h4 {  /* 見出し下の説明文 */
   border-radius: 0 20px 20px 0;  /* 左上 | 右上 | 右下 | 左下 */
   border: 3px solid var(--darkgreen);
   font-size: x-large;
-  margin: 0;
-  z-index: 10; /* 画像の上に乗せる */
   white-space: nowrap; /* 改行を防ぐ */
+  margin: 0;
+  z-index: 0; /* 重ね順：下 */
 }
 
 /*　個別ページ背景色 */
