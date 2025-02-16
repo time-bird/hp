@@ -218,8 +218,8 @@ h4 {  /* 見出し下の説明文 */
   width: 100px;
   height: 100px;
   position: relative; /* 画像が基準 */
-  border: 5px solid var(--lightgreen);
   border-radius: 50%;
+  border: 3px solid var(--darkgreen);
 }
 .h1deco_txt {  /* 見出し */
   position: absolute;
@@ -228,6 +228,7 @@ h4 {  /* 見出し下の説明文 */
   background-color: white;
   padding: 5px 15px 5px 10px;  /* 上 | 右 | 下 | 左 */
   border-radius: 0 20px 20px 0;  /* 左上 | 右上 | 右下 | 左下 */
+  border: 3px solid var(--darkgreen);
   font-size: x-large;
   margin: 0;
   z-index: 10; /* 画像の上に乗せる */
