@@ -214,7 +214,7 @@ h4 {  /* 見出し下の説明文 */
 .h1deco_txt {  /* 見出し */
   position: absolute;
   top: 24px; /* 画像の中央 */
-  left: 94px; /* 画像の右に重ねて配置 */
+  left: 95px; /* 画像の右に重ねて配置 */
   background-color: white;
   padding: 8px 20px 8px 16px;  /* 上 | 右 | 下 | 左 */
   border-radius: 0 25px 25px 0;  /* 左上 | 右上 | 右下 | 左下 */
@@ -224,13 +224,6 @@ h4 {  /* 見出し下の説明文 */
   white-space: nowrap; /* 改行を防ぐ */
   margin: 0;
   z-index: 1; /* 重ね順：下 */
-}
-
-/*　個別ページ背景色 */
-.back {
-  background-color: var(--lightgreen);
-  padding: 20px;
-  border-radius: 15px;
 }
 
 /*　フキダシ */
@@ -274,13 +267,23 @@ h4 {  /* 見出し下の説明文 */
   justify-content: space-between;
   align-items: center;
 }
-/* 横並び：左寄せ：白バック */
-.flex_white {
-  display: flex;
-  padding: 15px;
-  margin-bottom: 15px;
+
+/*　個別ページ背景色 */
+.back {
+  background-color: var(--lightgreen);
+  padding: 20px;
+  border-radius: 15px;
+}
+/* 個別ページ：白バック */
+.back_white {
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
+}
+.flex_white {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 .space {
   width: 50px;
@@ -395,10 +398,8 @@ p {
   }
   .flex_white {
     flex-direction: column; /* 子要素を縦並びにする */
-    padding: 10px;
     margin-bottom: 10px;
-    background-color: white;
-    border-radius: 5px;
+    align-items: center;
   }
   
   .space { /* 縦並び子要素間：ラインと隙間 */
@@ -412,7 +413,10 @@ p {
   .img_right {
     margin-left: 0px; 
     display: block;
-  }  
+  }
+  img { /* 画像の下に隙間を作る */
+    margin-bottom: 10px;
+  }
 }
 
 
