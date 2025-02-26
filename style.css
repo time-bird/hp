@@ -216,7 +216,7 @@ h4 {  /* 見出し下の説明文 */
   top: 24px; /* 画像の中央 */
   left: 94px; /* 画像の右に重ねて配置 */
   background-color: white;
-  padding: 8px 22px 8px 10px;  /* 上 | 右 | 下 | 左 */
+  padding: 8px 35px 8px 10px;  /* 上 | 右 | 下 | 左 */
   border-radius: 0 25px 25px 0;  /* 左上 | 右上 | 右下 | 左下 */
   border: 3px solid var(--darkgreen);
   border-left: 0px;
