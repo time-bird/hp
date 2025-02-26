@@ -65,6 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
             hamburger.addEventListener("click", function () {
               nav.classList.toggle("active");
             });
+          
+            // 画面外をクリックするとメニューを閉じる
+            document.addEventListener("click", function (event) {
+              if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+                nav.classList.remove("active");
+              }
+            });         
           }
         } else {
           console.error("#header element not found in DOM.");
