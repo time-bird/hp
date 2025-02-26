@@ -213,7 +213,7 @@ h4 {  /* 見出し下の説明文 */
 }
 .h1deco_txt {  /* 見出し */
   position: absolute;
-  top: 28px; /* 画像の中央 */
+  top: 25px; /* 画像の中央 */
   left: 96px; /* 画像の右に重ねて配置 */
   background-color: white;
   padding: 8px 18px 8px 10px;  /* 上 | 右 | 下 | 左 */
