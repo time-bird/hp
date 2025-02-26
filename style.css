@@ -268,15 +268,6 @@ h4 {  /* 見出し下の説明文 */
   align-items: center;
 }
 
-.flex img {
-  max-width: 100%;
-  height: auto;
-}
-.flex_sb img {
-  max-width: 100%;
-  height: auto;
-}
-
 /*　個別ページ背景色 */
 .back {
   background-color: var(--lightgreen);
@@ -292,7 +283,12 @@ h4 {  /* 見出し下の説明文 */
 .flex_white {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   margin-bottom: 10px;
+}
+.flex_white img {
+  flex: 1;
+  min-width: 0;
 }
 .space {
   width: 50px;
@@ -408,7 +404,7 @@ p {
   .flex_white {
     flex-direction: column; /* 子要素を縦並びにする */
     margin-bottom: 10px;
-    align-items: center;
+    align-items: flex-start;
   }
   .h1deco {
     display: flex;
@@ -443,7 +439,7 @@ p {
     height: auto;
     margin-bottom: 10px;
   }
-  .flex_sb img {
+  .flex_white img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
