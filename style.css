@@ -165,7 +165,7 @@ body {
 h1 {
   font-size: x-large;
   margin: 0px;
-  padding: 8px 18px;
+  padding: 7px 20px;
   color: black;
   background-color: white;
   width: fit-content;
@@ -174,7 +174,7 @@ h1 {
 h2 {
   font-size: larger;
   margin: 0px;
-  padding: 8px 18px;
+  padding: 7px 20px;
   color: black;
   background-color: white;
   width: fit-content;
@@ -183,7 +183,7 @@ h2 {
 h3 {
   font-size: large;
   margin: 0px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   color: white;
   background-color: var(--darkgreen);
   width: fit-content;
@@ -358,9 +358,9 @@ p {
     width: 100%;
     text-align: center;
   }
-  /* ハンバーガーメニューの展開時にサブメニューを表示 */
+  /* ハンバーガーメニューの展開時にサブメニューを非表示 */
   .nav_wrap.active .dd_lists {
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
     max-height: 200px; /* 必要に応じて高さを調整 */
   }
@@ -373,10 +373,11 @@ p {
     color: var(--lightgreen);
   }
    /* 親メニューとサブメニュー間の余白 */
-   .nav_list:hover .dd_lists,
-   .nav_wrap.active .nav_list .dd_lists {
-      margin-top: 5px; /* 親メニューの直下に配置 */
-   }
+/*   .nav_list:hover .dd_lists,
+/*   .nav_wrap.active .nav_list .dd_lists {
+/*      margin-top: 5px; /* 親メニューの直下に配置 */
+/*   } */
+   
 
   .flex {
     flex-direction: column; /* 子要素を縦並びにする */
@@ -388,6 +389,7 @@ p {
   
   }  
   .flex_sb {
+    display: flex;
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
   }
