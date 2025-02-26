@@ -176,7 +176,7 @@ body {
 h1 {
   font-size: x-large;
   margin: 0px;
-  padding: 3px 17px;
+  padding: 10px 20px;
   color: black;
   background-color: white;
   width: fit-content;
@@ -185,7 +185,7 @@ h1 {
 h2 {
   font-size: larger;
   margin: 0px;
-  padding: 3px 15px;
+  padding: 10px 20px;
   color: black;
   background-color: white;
   width: fit-content;
@@ -194,7 +194,7 @@ h2 {
 h3 {
   font-size: large;
   margin: 0px;
-  padding: 3px 13px;
+  padding: 10px 20px;
   color: white;
   background-color: var(--darkgreen);
   width: fit-content;
