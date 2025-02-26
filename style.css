@@ -143,17 +143,6 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-/* サブドロップダウンメニューのホバー時区切り線
-.dd_list a:hover::before {  
-  content: "";
-  width: 90%;
-  height: 1px;
-  background-color: var(--darkgreen);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-} */
 /* ハンバーガーメニューのスタイル */
 .hamburger {
   display: none;
@@ -176,20 +165,20 @@ body {
 h1 {
   font-size: x-large;
   margin: 0px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   color: black;
   background-color: white;
   width: fit-content;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 h2 {
   font-size: larger;
   margin: 0px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   color: black;
   background-color: white;
   width: fit-content;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 h3 {
   font-size: large;
@@ -198,7 +187,7 @@ h3 {
   color: white;
   background-color: var(--darkgreen);
   width: fit-content;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 h4 {  /* 見出し下の説明文 */
   font-size: medium;
@@ -227,8 +216,8 @@ h4 {  /* 見出し下の説明文 */
   top: 28px; /* 画像の中央 */
   left: 96px; /* 画像の右に重ねて配置 */
   background-color: white;
-  padding: 5px 15px 5px 10px;  /* 上 | 右 | 下 | 左 */
-  border-radius: 0 20px 20px 0;  /* 左上 | 右上 | 右下 | 左下 */
+  padding: 8px 18px 8px 10px;  /* 上 | 右 | 下 | 左 */
+  border-radius: 0 25px 25px 0;  /* 左上 | 右上 | 右下 | 左下 */
   border: 3px solid var(--darkgreen);
   border-left: 0px;
   font-size: x-large;
@@ -240,8 +229,8 @@ h4 {  /* 見出し下の説明文 */
 /*　個別ページ背景色 */
 .back {
   background-color: var(--lightgreen);
-  padding: 15px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 /*　フキダシ */
