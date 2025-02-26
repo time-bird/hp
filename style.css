@@ -268,6 +268,11 @@ h4 {  /* 見出し下の説明文 */
   align-items: center;
 }
 
+.flex img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*　個別ページ背景色 */
 .back {
   background-color: var(--lightgreen);
@@ -394,27 +399,38 @@ p {
   .flex_sb {
     display: flex;
     flex-direction: column; /* 子要素を縦並びにする */
-    align-items: center;
+    align-items: flex-start;
   }
   .flex_white {
     flex-direction: column; /* 子要素を縦並びにする */
     margin-bottom: 10px;
     align-items: center;
   }
-  
+  .h1deco {
+    display: flex;
+    align-items: center;
+  }
+  .leftspace {
+    align-self: flex-end; /* 右揃え */
+    margin-left: 0px;
+  }  
   .space { /* 縦並び子要素間：ラインと隙間 */
     margin: 10px 0px;
     height: 1px;
     background-color: var(--darkgray);
   }
-  .leftspace {
-    margin-left: 0px;
-  }
   .img_right {
     margin-left: 0px; 
     display: block;
   }
-  img { /* 画像の下に隙間を作る */
+  .flex img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .flex_sb img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
   }
 }
