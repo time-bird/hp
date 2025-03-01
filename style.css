@@ -182,7 +182,7 @@ h2 {
 }
 h3 {
   font-size: large;
-  margin: 0px;
+  margin: 10px 0px;
   padding: 7px 20px;
   color: white;
   background-color: var(--darkgreen);
@@ -308,11 +308,13 @@ h4 {  /* 見出し下の説明文 */
 
 a {
   text-decoration: none;
+  color: var(--darkgreen);
 }
 p {
   margin: 5px 0px;
   color: black;
   line-height: 160%;
+  text-align: left;
 }
 
 /* スマホ画面対応：767px以下の場合 */
@@ -380,53 +382,57 @@ p {
     text-align: center;
     color: var(--lightgreen);
   }
-   /* 親メニューとサブメニュー間の余白 */
+  /* 親メニューとサブメニュー間の余白 */
 /*   .nav_list:hover .dd_lists,
 /*   .nav_wrap.active .nav_list .dd_lists {
 /*      margin-top: 5px; /* 親メニューの直下に配置 */
 /*   } */
-   
 
   .flex {
     flex-direction: column; /* 子要素を縦並びにする */
     align-items: center;
+    text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     background-color: var(--lightgreen);
-    border-radius: 5px;
-  
+    border-radius: 5px;  
   }  
   .flex_sb {
-    display: flex;
     flex-direction: column; /* 子要素を縦並びにする */
-    align-items: flex-start;
+    height: fit-content;
   }
   .flex_white {
     flex-direction: column; /* 子要素を縦並びにする */
     margin-bottom: 10px;
     align-items: flex-start;
   }
+
+  h1 {
+    margin: 0 auto;
+  }
   .h1deco {
-    display: flex;
     align-items: center;
-    max-width: 100%;
-  }
+    height: fit-content;
+ }  
   .h1deco_img {  /* スマホ画面では画像を非表示 */
-    visibility: hidden;
+    display: none;
   }
-  .h1deco_txt {  /* 見出し */
+  .h1deco_txt {  /* 見出し：画面幅の中央揃え */
+    position: static;
     background-color: white;
     padding: 8px 16px;
     border-radius: 25px;
     border: 3px solid var(--darkgreen);
     font-size: x-large;
-    flex-wrap: wrap; /* 改行する */
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+    margin-bottom: 10px;
   }
   
   .leftspace {
-    align-self: flex-end; /* 右揃え */
     margin-left: 0px;
-  }  
+  }
   .space { /* 縦並び子要素間：ラインと隙間 */
     margin: 10px 0px;
   }
@@ -437,6 +443,10 @@ p {
   .flex img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
+  }
+  .flex_sb img {
+    top: auto;
     margin-bottom: 10px;
   }
   .flex_white img {
