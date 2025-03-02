@@ -85,6 +85,9 @@ body {
   background-color: var(--darkgreen);
   color: var(--lightgreen);
 }
+.nav_list + .nav_list {
+  border-left: 1px solid var(--darkgreen);
+}
 .current a{
   color: black;
 }
