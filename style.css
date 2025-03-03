@@ -371,6 +371,10 @@ p {
     width: 100%;
     text-align: center;
   }
+  .nav_list + .nav_list {
+    border-left: 0px solid white;
+  }
+  
   /* ハンバーガーメニューの展開時にサブメニューを非表示 */
   .nav_wrap.active .dd_lists {
     visibility: hidden;
