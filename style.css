@@ -15,9 +15,8 @@ body, ul, li {  /* スタイル初期化 */
   list-style: none;
 }
 
-body {
-  margin: 0px;          /* ページ全体のmargin */
-  padding: 0px;         /* ページ全体のpadding */
+body {  /* バックグラウンドカラー */
+  background-color: var(--lightgreen);
 }
 
 #main {
@@ -172,7 +171,9 @@ h1 {
   color: black;
   background-color: white;
   width: fit-content;
+  border-width: 1px;
   border-radius: 25px;
+  border-color: var(--lightgreen);
 }
 h2 {
   font-size: larger;
@@ -181,7 +182,9 @@ h2 {
   color: black;
   background-color: white;
   width: fit-content;
+  border-width: 1px;
   border-radius: 25px;
+  border-color: var(--lightgreen);
 }
 h3 {
   font-size: large;
@@ -190,7 +193,9 @@ h3 {
   color: white;
   background-color: var(--darkgreen);
   width: fit-content;
+  border-width: 1px;
   border-radius: 25px;
+  border-color: var(--lightgreen);
 }
 h4 {  /* 見出し下の説明文 */
   font-size: medium;
@@ -266,7 +271,7 @@ h4 {  /* 見出し下の説明文 */
   display: flex;
   padding: 15px;
   margin-bottom: 15px;
-  background-color: var(--lightgreen);
+  background-color: white;
   border-radius: 10px;
 }
 /* 横並び：両端揃え */
@@ -278,7 +283,7 @@ h4 {  /* 見出し下の説明文 */
 
 /*　個別ページ背景色 */
 .back {
-  background-color: var(--lightgreen);
+  background-color: white;
   padding: 20px;
   border-radius: 15px;
 }
