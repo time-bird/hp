@@ -199,10 +199,6 @@ h4 {  /* 見出し下の説明文 */
   color: var(--darkgreen);
   border-bottom: 2px dotted var(--darkgreen);
 }
-b {  /* 太文字 */
-  font-weight: bold;
-  margin-top: 5px;
-}
 .h1center {
   text-align: center;
 }
@@ -322,11 +318,14 @@ a {
   text-decoration: none;
   color: var(--darkgreen);
 }
-p {
+p {  /* テキスト段落 */
   margin: 5px 0px;
   color: black;
   line-height: 160%;
   text-align: left;
+}
+b {  /* 太文字 */
+  font-weight: bold;
 }
 
 /* スマホ画面対応：767px以下の場合 */
