@@ -168,19 +168,31 @@ body {  /* バックグラウンドカラー */
 h1 {
   font-size: x-large;
   margin: 0px;
+  padding: 7px 20px;
   color: black;
+  background-color: white;
   width: fit-content;
+  border-width: 1px;
+  border-radius: 25px;
+  border-color: var(--lightgreen);
 }
 h2 {
   font-size: larger;
   margin: 0px;
+  padding: 7px 20px;
   color: black;
+  background-color: white;
   width: fit-content;
+  border-width: 1px;
+  border-radius: 25px;
+  border-color: var(--lightgreen);
 }
 h3 {
   font-size: large;
-  margin: 0px;
-  color: black;
+  margin: 10px 0px;
+  padding: 7px 20px;
+  color: white;
+  background-color: var(--darkgreen);
   width: fit-content;
   border-width: 1px;
   border-radius: 25px;
@@ -196,13 +208,31 @@ h4 {  /* 見出し下の説明文 */
 .h1center {
   text-align: center;
 }
-.icon {
+.h1deco {  /* 個別紹介ページの見出し：画像＋見出しを包むコンテナ */
+  position: relative; /* 見出しの absolute 配置の基準 */
+  display: inline-block; /* 必要に応じて調整 */
+}
+.h1deco_img {  /* 画像 */
   width: 100px;
   height: 100px;
+  position: relative; /* 画像が基準 */
+  border-radius: 50%;
+  border: 3px solid var(--darkgreen);
+  z-index: 0; /* 重ね順：下 */
 }
-.subicon {
-  width: 60px;
-  height: 60px;
+.h1deco_txt {  /* 見出し */
+  position: absolute;
+  top: 24px; /* 画像の中央 */
+  left: 95px; /* 画像の右に重ねて配置 */
+  background-color: white;
+  padding: 8px 20px 8px 16px;  /* 上 | 右 | 下 | 左 */
+  border-radius: 0 25px 25px 0;  /* 左上 | 右上 | 右下 | 左下 */
+  border: 3px solid var(--darkgreen);
+  border-left: 0px;
+  font-size: x-large;
+  white-space: nowrap; /* 改行を防ぐ */
+  margin: 0;
+  z-index: 1; /* 重ね順：上 */
 }
 
 /*　フキダシ */
@@ -237,7 +267,7 @@ h4 {  /* 見出し下の説明文 */
   list-style-position: inside;
 }
 
-/* 横並び：左寄せ */
+/* 横並び：左寄せ：薄緑色バック */
 .flex {
   display: flex;
   padding: 15px;
@@ -255,9 +285,14 @@ h4 {  /* 見出し下の説明文 */
 /*　個別ページ背景色 */
 .back {
   background-color: white;
-  margin-bottom: 20px;
   padding: 20px;
   border-radius: 15px;
+}
+/* 個別ページ：白バック */
+.back_white {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 .flex_white {
   display: flex;
@@ -380,14 +415,12 @@ b {  /* 太文字 */
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: var(--lightgreen);
+    border-radius: 5px;  
   }  
   .flex_sb {
     flex-direction: column; /* 子要素を縦並びにする */
     height: fit-content;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
   }
   .flex_white {
     flex-direction: column; /* 子要素を縦並びにする */
@@ -395,8 +428,26 @@ b {  /* 太文字 */
     align-items: flex-start;
   }
 
-  h1, h2 {
-    width: 100%;
+  h1 {
+    margin: 0 auto;
+  }
+  .h1deco {
+    align-items: center;
+    height: fit-content;
+ }  
+  .h1deco_img {  /* スマホ画面では画像を非表示 */
+    display: none;
+  }
+  .h1deco_txt {  /* 見出し：画面幅の中央揃え */
+    position: static;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 3px solid var(--darkgreen);
+    font-size: x-large;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
     margin-bottom: 10px;
   }
   
