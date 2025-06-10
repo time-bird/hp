@@ -45,7 +45,7 @@ body {  /* バックグラウンドカラー */
   font-weight: bolder;
   color: var(--darkgreen);
 }
-.iconsize {
+.titleicon {
   width: 80px;
   height: 80px;
 }
@@ -353,7 +353,7 @@ b {  /* 太文字 */
     font-weight: bolder;
     color: var(--darkgreen);
   }
-  .iconsize {
+  .titleicon {
     width: 60px;
     height: 60px;
   }  
