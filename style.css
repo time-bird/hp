@@ -260,7 +260,7 @@ h4 {
   margin: 5px 10px 0px 0px;
   padding-left: 5px;
   color: var(--darkgreen);
-  border-bottom: 2px dotted var(--darkgreen);
+  border-top: 2px dotted var(--darkgreen);
 }
 /* 文字列基本設定：リンク */
 a {
