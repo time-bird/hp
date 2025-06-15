@@ -50,6 +50,9 @@ body {
   width: 80px;
   height: 80px;
 }
+.titlea {
+  display: inline;
+}
 /* メニューバー */
 .nav_wrap {
   flex-grow: 1;
