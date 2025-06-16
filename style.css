@@ -90,6 +90,7 @@ body {
 .nav_list a:hover {
   background-color: var(--darkgreen);
   color: var(--lightgreen);
+  width: 100%;
 }
 .nav_list + .nav_list {
   border-left: 1px solid var(--darkgreen);
@@ -103,7 +104,6 @@ body {
   transition: all .3s;/*表示の変化を0.3秒に指定*/
   width: 100%;
   position: absolute;
-  justify-content: flex-end;
   list-style: none;
   top: 50px;
   left: 0;
@@ -115,6 +115,7 @@ body {
 /* サブドロップダウンメニュー背景 */
 .dd_list {
   background-color: rgba(180, 223, 154, 0.8);
+  justify-content: flex-end;
   width: max-content;
   height: 50px;
   transition: all .3s;
@@ -140,7 +141,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 0px 5px;
+  padding: 0px 20px;
   color: var(--darkgreen);
   justify-content: center;
   align-items: center;
