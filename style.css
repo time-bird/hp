@@ -67,7 +67,7 @@ body {
   border-color: var(--darkgreen);
 }
 .nav_list {
-  width: 100%;
+  width: max-content;
   height: 50px;
   position: relative;
   transition: all .3s;
