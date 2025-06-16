@@ -68,7 +68,6 @@ body {
 }
 .nav_list {
   width: max-content;
-  min-width: 200px;
   height: 50px;
   position: relative;
   transition: all .3s;
@@ -114,10 +113,10 @@ body {
 /* サブドロップダウンメニュー背景 */
 .dd_list {
   background-color: rgba(180, 223, 154, 0.8);
+  width: max-content;
   height: 50px;
   transition: all .3s;
   position: relative;
-  width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
