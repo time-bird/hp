@@ -68,8 +68,7 @@ body {
 }
 .nav_list {
   width: max-content;
-  height: 50px;
-  padding: 0px 20px;
+  height: 35px;
   position: relative;
   transition: all .3s;
 }
@@ -107,7 +106,7 @@ body {
   position: absolute;
   list-style: none;
   top: 50px;
-  right: 0;;
+  right: 0;
 }
 .nav_list:hover .dd_lists {
   visibility: visible;  /*ナビメニューにホバーしたら表示*/
@@ -116,9 +115,8 @@ body {
 /* サブドロップダウンメニュー背景 */
 .dd_list {
   background-color: rgba(180, 223, 154, 0.8);
-  justify-content: flex-end;
   width: max-content;
-  height: 50px;
+  height: 35px;
   transition: all .3s;
   position: relative;
   margin: 0;
@@ -133,7 +131,7 @@ body {
   background-color: var(--darkgreen);
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 3;
 }
 /* サブドロップダウンメニュー文字 */
@@ -143,7 +141,7 @@ body {
   height: 100%;
   padding: 0px 20px;
   color: var(--darkgreen);
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   letter-spacing: normal;
   text-decoration: none;
@@ -305,7 +303,7 @@ b {
   font-size: medium;
   font-weight: bold;
   align-items: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.03em;
 } 
 .balloon::after {
   position: absolute;
