@@ -56,7 +56,6 @@ body {
 }
 /* メニューバー */
 .nav_wrap {
-  flex-grow: 1;
   text-align: center;
 }
 .nav_lists {
@@ -86,7 +85,6 @@ body {
   letter-spacing: 0.03em;
   font-weight: bold;
   transition: all .3s;
-  right: 0;
 }
 .nav_list a:hover {
   background-color: var(--darkgreen);
@@ -105,6 +103,7 @@ body {
   transition: all .3s;/*表示の変化を0.3秒に指定*/
   width: 100%;
   position: absolute;
+  align-items: end;
   list-style: none;
   top: 50px;
   right: 0;
