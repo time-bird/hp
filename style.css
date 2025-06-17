@@ -104,20 +104,20 @@ body {
   color: black;
 }
 .dd_lists {
-  visibility: hidden; /*デフォルトでは非表示の状態にしておく*/
-  opacity: 0;         /*不透明度0*/
-  transition: all .3s;/*表示の変化を0.3秒に指定*/
+  visibility: hidden;   /*デフォルトでは非表示の状態にしておく*/
+  opacity: 0;           /*不透明度0*/
+  transition: all .3s;  /*表示の変化を0.3秒に指定*/
   position: absolute;
   list-style: none;
   top: 35px;
   right: 0;
-  display: flex;        /* 子を右揃えするためにflex化 */
+  display: flex;          /* 子を右揃えするためにflex化 */
   flex-direction: column;
-  align-items: flex-end; /* ← 子リストを右に寄せる */
+  align-items: flex-end;  /* ← 子リストを右に寄せる */
 }
 .nav_list:hover .dd_lists {
-  visibility: visible;  /*ナビメニューにホバーしたら表示*/
-  opacity: 1;           /*不透明度1*/
+  visibility: visible;    /*ナビメニューにホバーしたら表示*/
+  opacity: 1;             /*不透明度1*/
   width: 100%;
 }
 /* サブドロップダウンメニュー背景 */
@@ -335,19 +335,16 @@ b {
     height: auto;
     margin-bottom: 10px;
   }  
-  .title {
-    padding-left: 10px;
-    font-size: 30px;
-    font-weight: bolder;
-    color: var(--darkgreen);
-  }
-  .titleicon {
-    width: 60px;
+  .titlelogo {
     height: 60px;
+  }  
+  .titleicon {
+    height: 30px;
   }  
   .hamburger {
     display: flex;
   }
+  /* スライドメニューの設定 */
   .nav_wrap {
     display: none;
     position: fixed;
@@ -367,6 +364,7 @@ b {
     display: block;
     transform: translateX(0);
   }
+  /* スライドメニューの設定 */
   .nav_lists {
     flex-direction: column;
     list-style: disc;
@@ -374,7 +372,7 @@ b {
     text-align: center;
   }
   .nav_list + .nav_list {
-    border-left: 0px solid white;
+    border-bottom: 0px solid white;
   }
   
   /* ハンバーガーメニューの展開時にサブメニューを非表示 */
