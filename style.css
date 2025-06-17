@@ -61,7 +61,7 @@ body {
 }
 .nav_lists {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   list-style: none;
   border-width: 1px;
   border-color: var(--darkgreen);
@@ -86,6 +86,7 @@ body {
   letter-spacing: 0.03em;
   font-weight: bold;
   transition: all .3s;
+  right: 0;
 }
 .nav_list a:hover {
   background-color: var(--darkgreen);
