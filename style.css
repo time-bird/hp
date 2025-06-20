@@ -409,14 +409,14 @@ b {
     margin-left: 15px;
   }
   .dd_lists {
-    position: relative;
+    position: static;
     display: block;
     visibility: visible;
     opacity: 1;
     margin: 0;
     padding-left: 20px;
     background-color: white;
-    list-style: disc inside;
+    list-style: none;
   }
   /* サブメニュー項目の配置調整 */
   .dd_list {
