@@ -131,7 +131,7 @@ body {
   position: relative;
   margin: 0;
   z-index: 2;
-  border-right: 1px solid var(--darkgreen);;
+  border-right: 1px solid var(--darkgreen);
 }
 
 /* サブドロップダウンメニュー区切り線 */
@@ -363,6 +363,7 @@ b {
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
+    align-items: center;
   }
   .nav_wrap.active {
     display: block;
@@ -379,7 +380,7 @@ b {
     align-items: center;
   }
   .nav_list {
-    padding: 10px 0;
+    width: 100%;
   }
   .nav_list a {
     padding: 10px 20px;
@@ -389,6 +390,8 @@ b {
   }
   .dd_list {
     visibility: hidden;
+    border-right: 0px solid white;
+
   }
   .dd_list a {
     visibility: hidden;
@@ -398,6 +401,7 @@ b {
     background-color: var(--darkgreen);
     color: var(--lightgreen);
     width: 100%;
+    border-radius: 10px;
   }
   /* 罫線は非表示 */
   .nav_list + .nav_list {
