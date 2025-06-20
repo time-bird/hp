@@ -354,7 +354,7 @@ b {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
@@ -373,6 +373,10 @@ b {
     display: block;
     padding: 0;
     margin: 0;
+    width: 100%;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    align-items: center;
   }
   .nav_list {
     padding: 10px 0;
@@ -381,16 +385,13 @@ b {
     padding: 10px 20px;
   }
   .dd_lists {
-    visibility: visible;
-    list-style: none;
+    visibility: hidden;
   }
   .dd_list {
-    padding: 5px 0;
+    visibility: hidden;
   }
   .dd_list a {
-    font-size: medium;
-    text-align: left;
-    color: var(--darkgreen);
+    visibility: hidden;
   }
   /* ホバー時の挙動 */
   .nav_list a:hover {
@@ -405,11 +406,6 @@ b {
   /* サブメニュー区切り線無し */
   .dd_list + .dd_list {
     border-top: 0px solid white;
-  }
-  .dd_list a:hover {
-    background-color: var(--darkgreen);
-    color: var(--lightgreen);
-    width: 100%;
   }
 
   .flex_left_whitebox {
