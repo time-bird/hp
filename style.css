@@ -132,6 +132,7 @@ body {
   z-index: 2;
   border-right: 1px solid var(--darkgreen);;
 }
+
 /* サブドロップダウンメニュー区切り線 */
 .dd_list + .dd_list {
   border-top: 1px solid var(--darkgreen);
@@ -335,10 +336,12 @@ b {
     height: auto;
     margin-bottom: 10px;
   }  
-  .titlelogo {
+  .titleicon {
+    width: 60px;
     height: 60px;
   }  
-  .titleicon {
+  .titlelogo {
+    width: auto;
     height: 30px;
   }  
   .hamburger {
@@ -354,7 +357,7 @@ b {
     height: 100%;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 30px;
     overflow-y: auto;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
@@ -369,18 +372,46 @@ b {
     flex-direction: column;
     list-style: disc;
     width: 100%;
-    text-align: center;
+    border: 0px;
   }
+  /* ホバー時の挙動 */
+  .nav_list a:hover {
+    background-color: var(--darkgreen);
+    color: var(--lightgreen);
+    width: 100%;
+  }
+  /* 罫線は非表示 */
   .nav_list + .nav_list {
     border-bottom: 0px solid white;
   }
   
-  /* ハンバーガーメニューの展開時にサブメニューを非表示 */
+  /* ハンバーガー展開のメニュー調整 */
   .nav_wrap.active .dd_lists {
-    visibility: hidden;
+    visibility: visible;
     opacity: 1;
-    max-height: 200px; /* 必要に応じて高さを調整 */
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 30px;
   }
+  .dd_lists {
+    position: static;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    padding-left: 20px; /* サブメニューインデント調整 */
+  }
+  .dd_list {
+    background-color: transparent;
+    border: none;
+    height: auto;
+    margin: 0;
+  }
+  .dd_list a {
+    color: var(--darkgreen);
+    text-align: left;
+    padding: 5px 0;
+  }
+
   /* サブメニュー項目の配置調整 */
   .dd_list a {
     display: block;
