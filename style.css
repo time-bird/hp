@@ -371,26 +371,37 @@ b {
   /* スライドメニューの設定 */
   .nav_lists {
     flex-direction: column;
-    list-style: none;
-    width: 100%;
-    border: 0px;
+    padding: 0;
+    margin: 0;
   }
   .nav_list {
     position: relative;
-    transition: all .3s;
+    padding: 10px 0;
   }
   .nav_list a {
-    padding: 0px 20px;
-    width: 100%;
-    height: 100%;
-    align-items: start;
-    text-decoration: none;
-    color: var(--darkgreen);
-    font-size: medium;
-    letter-spacing: 0.03em;
-    font-weight: bold;
-    transition: all .3s;
+    display: block;
+    padding: 10px 20px;
   }
+  .dd_lists {
+    display: block;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    margin-left: 20px; /* インデントをつける */
+    padding: 0;
+    list-style: none;
+  }
+  .dd_list {
+    padding: 5px 0;
+  }
+  .dd_list a {
+    display: block;
+    padding: 5px 0 5px 10px;
+    font-size: medium;
+    text-align: left;
+    color: var(--darkgreen);
+  }
+
   /* ホバー時の挙動 */
   .nav_list a:hover {
     background-color: var(--darkgreen);
@@ -401,36 +412,6 @@ b {
   .nav_list + .nav_list {
     border-bottom: 0px solid white;
   }
-  /* ハンバーガー展開のサブメニュー調整 */
-  .nav_wrap.active .dd_lists {
-    position: static;
-    visibility: visible;
-    display: block;
-    opacity: 1;
-    margin: 0;
-    list-style: none;
-    margin-left: 15px;
-    background-color: white;
-  }
-  /* サブメニュー項目の配置調整 */
-  .dd_list {
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    border: 0px solid white;
-    margin: 0;
-    white-space: wrap;
-  }
-  .dd_list a {
-    display: block;
-    padding: 10px 0px; /* 適切な余白を設定 */
-    font-size: medium;
-    text-align: left;
-    color: var(--darkgreen);
-    letter-spacing: normal;
-    text-decoration: none;
-
-  }
   /* サブメニュー区切り線無し */
   .dd_list + .dd_list {
     border-top: 0px solid white;
@@ -438,6 +419,7 @@ b {
   .dd_list a:hover {
     background-color: var(--darkgreen);
     color: var(--lightgreen);
+    width: 100%;
   }
 
   .flex_left_whitebox {
