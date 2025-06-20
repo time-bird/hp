@@ -370,7 +370,6 @@ b {
   }
   /* スライドメニューの設定 */
   .nav_lists {
-    flex-direction: column;
     display: block;
     padding: 0;
     margin: 0;
@@ -379,27 +378,20 @@ b {
     padding: 10px 0;
   }
   .nav_list a {
-    display: block;
     padding: 10px 20px;
   }
   .dd_lists {
     visibility: visible;
-    opacity: 1;
-    margin-left: 20px; /* インデントをつける */
-    padding: 0;
     list-style: none;
   }
   .dd_list {
     padding: 5px 0;
   }
   .dd_list a {
-    display: block;
-    padding: 5px 0 5px 10px;
     font-size: medium;
     text-align: left;
     color: var(--darkgreen);
   }
-
   /* ホバー時の挙動 */
   .nav_list a:hover {
     background-color: var(--darkgreen);
