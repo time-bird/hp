@@ -358,7 +358,7 @@ b {
     height: 100%;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 20px;
     overflow-y: auto;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
@@ -371,12 +371,12 @@ b {
   /* スライドメニューの設定 */
   .nav_lists {
     flex-direction: column;
-    margin-left: 10px;
-    list-style: disc inside;
+    list-style: none;
     width: 100%;
     border: 0px;
   }
   .nav_list {
+    position: relative;
     transition: all .3s;
   }
   .nav_list a {
@@ -412,9 +412,11 @@ b {
     position: relative;
     display: block;
     visibility: visible;
+    opacity: 1;
+    margin: 0;
+    padding-left: 20px;
+    background-color: white;
     list-style: disc inside;
-    align-items: flex-start;
-    padding-left: 20px; /* サブメニューインデント調整 */
   }
   /* サブメニュー項目の配置調整 */
   .dd_list {
@@ -428,6 +430,7 @@ b {
   .dd_list a {
     display: block;
     padding: 10px 0px; /* 適切な余白を設定 */
+    font-size: medium;
     text-align: left;
     color: var(--darkgreen);
     letter-spacing: normal;
