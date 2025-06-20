@@ -380,10 +380,10 @@ b {
     align-items: center;
   }
   .nav_list {
+    margin: 20px 0px;
     width: 100%;
   }
   .nav_list a {
-    margin: 20px 0px;
     padding: 20px;
   }
   .dd_lists {
