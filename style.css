@@ -401,11 +401,11 @@ b {
   }
   /* 罫線は非表示 */
   .nav_list + .nav_list {
-    border-bottom: 0px solid white;
+    border: 0px solid white;
   }
   /* サブメニュー区切り線無し */
   .dd_list + .dd_list {
-    border-top: 0px solid white;
+    border: 0px solid white;
   }
 
   .flex_left_whitebox {
