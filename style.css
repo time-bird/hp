@@ -383,7 +383,6 @@ b {
     padding: 10px 20px;
   }
   .dd_lists {
-    display: block;
     position: static;
     visibility: visible;
     opacity: 1;
