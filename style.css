@@ -40,7 +40,16 @@ body {
   align-items: center;
   margin: 10px 0px;
 }
+.title {
+  display: flex;
+  align-items: center;
+}
+.titleicon {
+  width: 80px;
+  height: 80px;
+}
 .titlelogo {
+  width: auto;
   height: 40px;
   margin-left: 10px;
 }
@@ -53,14 +62,6 @@ body {
   color: var(--darkgreen);
 }
 */
-.titleicon {
-  width: 80px;
-  height: 80px;
-}
-.title a {
-  display: flex;
-  align-items: center;
-}
 /* メニューバー */
 .nav_wrap {
   background-color: var(--lightgreen);
