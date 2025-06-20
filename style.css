@@ -403,20 +403,14 @@ b {
   }
   /* ハンバーガー展開のサブメニュー調整 */
   .nav_wrap.active .dd_lists {
-    visibility: visible;
-    opacity: 1;
-    list-style: disc inside;
-    margin-left: 15px;
-  }
-  .dd_lists {
     position: static;
-    display: block;
     visibility: visible;
+    display: block;
     opacity: 1;
     margin: 0;
-    padding-left: 20px;
-    background-color: white;
     list-style: none;
+    margin-left: 15px;
+    background-color: white;
   }
   /* サブメニュー項目の配置調整 */
   .dd_list {
