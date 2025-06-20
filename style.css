@@ -371,11 +371,11 @@ b {
   /* スライドメニューの設定 */
   .nav_lists {
     flex-direction: column;
+    display: block;
     padding: 0;
     margin: 0;
   }
   .nav_list {
-    position: relative;
     padding: 10px 0;
   }
   .nav_list a {
@@ -383,7 +383,6 @@ b {
     padding: 10px 20px;
   }
   .dd_lists {
-    position: static;
     visibility: visible;
     opacity: 1;
     margin-left: 20px; /* インデントをつける */
