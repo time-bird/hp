@@ -1,6 +1,12 @@
-# Time Bird Website Code
+# Time Bird Website
 
-アプリ制作者Time Birdのウェブサイトのコードです。
+アプリ開発者Time Birdのウェブサイトです。
+下記のURLをクリックするとサイトが表示されます。
 
 https://time-bird.github.io/hp/index.html
 
+## Release History
+
+### 2025-07-08
+- サイトをフルリリースしました。
+- サイトをGoogle Search Consoleに登録しました。
