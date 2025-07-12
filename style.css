@@ -185,7 +185,6 @@ body {
 /* 横並びボックス：両端揃え：背景なし */
 .flex_justify_nobox {
   display: flex;
-  margin-bottom: 10px;
   justify-content: space-between;
   align-items: center;
 }
@@ -282,6 +281,14 @@ p {
 /* 文字列基本設定：太文字 */
 b {
   font-weight: bold;
+}
+
+/* ボーダー */
+.border {
+  margin: 5px 0px 10px 0px;
+  width: 100%;
+  color: var(--darkgreen);
+  border-top: 2px dotted var(--darkgreen);
 }
 
 /* ボディ内リスト:divで適用（全体でリスト設定を消去してるため、改めて指定する） */
