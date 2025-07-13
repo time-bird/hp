@@ -194,6 +194,12 @@ body {
   justify-content: left;
   align-items: center;
 }
+/* 横並びボックス：内部メニュー用 */
+.flex_innermenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*　個別ページ背景色 */
 .back {
   background-color: white;
@@ -230,11 +236,15 @@ body {
 }
 
 /* ボディ内アイコンのサイズ（２種） */
-.mainicon {
+.icon_L {
   width: 100px;
   height: 100px;
 }
-.subicon {
+.icon_M {
+  width: 80px;
+  height: 80px;
+}
+.icon_S {
   width: 60px;
   height: 60px;
 }
@@ -261,7 +271,7 @@ h3 {
 /* 見出し下の説明文・ライン付き */
 h4 {
   font-size: medium;
-  margin: 5px 10px 0px 0px;
+  margin-top: 5px;
   padding-left: 5px;
   color: var(--darkgreen);
   border-top: 2px dotted var(--darkgreen);
@@ -283,18 +293,10 @@ b {
   font-weight: bold;
 }
 
-/* ボーダー */
-.border {
-  margin: 5px 0px 10px 0px;
-  width: 100%;
-  color: var(--darkgreen);
-  border-top: 2px dotted var(--darkgreen);
-}
-
 /* ボディ内リスト:divで適用（全体でリスト設定を消去してるため、改めて指定する） */
 .list li {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 /*　フキダシ（HOMEのみで使用） */
@@ -325,11 +327,21 @@ b {
   height: 0;
 }
 
-/* 内部メニュー：スマホだけ改行 */
+/* 内部メニュー：スマホだけ改行・棒線非表示 */
 .br_sp {
   display: none;
 }
-
+.bar {
+  display: inline;
+  margin: 0 10px;
+}
+/* ボーダー（内部メニュー下部等） */
+.border {
+  margin: 5px 0px 10px 0px;
+  width: 100%;
+  color: var(--darkgreen);
+  border-top: 2px dotted var(--darkgreen);
+}
 
 /* スマホ画面対応：767px以下の場合 */
 @media (max-width: 767px) {
@@ -435,6 +447,14 @@ b {
     align-items: center;
     text-align: center;
   }
+  /* 横並びボックス：内部メニュー用 */
+  .flex_innermenu {
+    flex-direction: column; /* 子要素を縦並びにする */
+    justify-content: center;
+    align-items: center;
+    line-height: 0.8;
+  }
+  /* 横並びボックス：画像並べ用 */
   .flex_gallery {
     flex-direction: column; /* 子要素を縦並びにする */
     gap: 10px;
@@ -445,16 +465,26 @@ b {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   .leftspace {
     margin-left: 0px;
   }
   .space { /* 縦並び子要素間：ラインと隙間 */
     margin: 10px 0px;
   }
-  /* 内部メニュー：スマホだけ改行 */
+  /* 内部メニュー：スマホだけ改行・棒線非表示 */
   .br_sp {
     display: block;
+  }
+  .bar {
+    display: none;
+  }
+  /* ボーダー（内部メニュー下部等） */
+  .border {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    color: var(--darkgreen);
+    border-top: 2px dotted var(--darkgreen);
   }
 }
 
