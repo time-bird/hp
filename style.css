@@ -32,7 +32,7 @@ body {
 #header {
   width: 100%;
   height: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .headerflex {
   display: flex;
@@ -45,8 +45,8 @@ body {
   align-items: center;
 }
 .titleicon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .titlelogo {
   width: auto;
@@ -76,7 +76,7 @@ body {
 }
 .nav_list {
   width: max-content;
-  height: 35px;
+  height: 30px;
   position: relative;
   transition: all .3s;
 }
@@ -110,7 +110,7 @@ body {
   transition: all .3s;  /*表示の変化を0.3秒に指定*/
   position: absolute;
   list-style: none;
-  top: 35px;
+  top: 30px;
   right: 0;
   display: flex;          /* 子を右揃えするためにflex化 */
   flex-direction: column;
@@ -126,7 +126,7 @@ body {
   background-color: rgba(180, 223, 154, 0.8);
   width: max-content;
   white-space: nowrap;
-  height: 35px;
+  height: 30px;
   transition: all .3s;
   position: relative;
   margin: 0;
