@@ -362,7 +362,8 @@ b {
   }  
   .titlelogo {
     width: auto;
-    height: 30px;
+    height: 40px;
+    margin-left: 10px;
   }  
   .hamburger {
     display: flex;
