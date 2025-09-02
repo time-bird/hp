@@ -50,8 +50,8 @@ body {
 }
 .titlelogo {
   width: auto;
-  height: 40px;
-  margin-left: 10px;
+  height: 60px;
+  margin-left: 20px;
 }
 /* ロゴを文字列にした場合こちらを使用
 .titlename {
