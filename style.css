@@ -276,6 +276,11 @@ h4 {
   color: var(--darkgreen);
   border-top: 2px dotted var(--darkgreen);
 }
+/* h4→h3の間のスペースを縮小（使い方ページのみ） */
+.h4toh3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /* 文字列基本設定：リンク */
 a {
   text-decoration: none;
