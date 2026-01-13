@@ -2,8 +2,9 @@
 
 /* 全体設定：色指定 */
 :root {
-  --darkgreen: #227c22;
+  --darkgreen: #228b22;
   --lightgreen: #afd899;
+  --lightgreen_80: rgb(175, 216, 153, 0.8);
   --red: #ba3204;
   --darkgray: #555555;   /* 使ってない */
   --gray: #808080;       /* 使ってない */
@@ -123,7 +124,7 @@ body {
 }
 /* サブドロップダウンメニュー背景 */
 .dd_list {
-  background-color: rgba(187, 249, 154, 0.8);
+  background-color: var(--lightgreen_80);
   width: max-content;
   white-space: nowrap;
   height: 30px;
