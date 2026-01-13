@@ -13,3 +13,6 @@ https://time-bird.github.io/hp/index.html
 
 ### 2025-09-02
 - Time Birdのマークとロゴを変更しました。
+
+### 2026-01-13
+- ABOUTにFacebookを追加しました。
