@@ -349,6 +349,31 @@ b {
   border-top: 2px dotted var(--darkgreen);
 }
 
+/* YouTube動画共通 */
+.youtube {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* iframeを親サイズに合わせる */
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 通常動画（16:9） */
+.youtube_wide {
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+}
+
+/* ショート動画（9:16） */
+.youtube_short {
+  max-width: 330px;
+  aspect-ratio: 9 / 16;
+}
+
 /* スマホ画面対応：767px以下の場合 */
 @media (max-width: 767px) {
   #main {
