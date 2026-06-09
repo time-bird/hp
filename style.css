@@ -360,10 +360,10 @@ b {
   display: block;
 }
 
-/* 画像（幅800px） */
-.img_800 {
+/* 画像（幅700px） */
+.img_700 {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   height: auto;
   display: block;
 }
