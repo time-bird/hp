@@ -349,6 +349,22 @@ b {
   border-top: 2px dotted var(--darkgreen);
 }
 
+/* 画像（幅500px） */
+.img_500 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+/* 画像（幅800px） */
+.img_800 {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+}
+
 /* YouTube動画共通 */
 .youtube {
   width: 100%;
