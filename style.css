@@ -135,7 +135,6 @@ body {
   position: relative;
   margin: 0;
   z-index: 2;
-  border-right: 1px solid var(--darkgreen);
 }
 
 /* サブドロップダウンメニュー区切り線 */
