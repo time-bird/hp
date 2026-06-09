@@ -106,16 +106,17 @@ body {
   color: black;
 }
 .dd_lists {
-  visibility: hidden;   /*デフォルトでは非表示の状態にしておく*/
-  opacity: 0;           /*不透明度0*/
-  transition: all .3s;  /*表示の変化を0.3秒に指定*/
+  visibility: hidden;     /*デフォルトでは非表示の状態にしておく*/
+  opacity: 0;             /*不透明度0*/
+  transition: all .3s;    /*表示の変化を0.3秒に指定*/
   position: absolute;
   list-style: none;
+  display: flex;          /* 子を親に揃えるためにflex化 */
+  flex-direction: column; /* 縦並び */
   top: 30px;
-  right: 0;
-  display: flex;          /* 子を右揃えするためにflex化 */
-  flex-direction: column;
-  align-items: flex-end;  /* ← 子リストを右に寄せる */
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;    /* ← 子リスト中央揃え */
 }
 .nav_list:hover .dd_lists {
   visibility: visible;    /*ナビメニューにホバーしたら表示*/
