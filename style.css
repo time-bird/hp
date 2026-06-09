@@ -152,12 +152,16 @@ body {
   text-decoration: none;
   position: relative;
   justify-content: center;  /* ← 子リスト中央揃え */
+  align-items: center;
+  box-sizing: border-box;
 }
-
-.dd_list a:hover {
+.dd_list:hover {
   background-color: var(--darkgreen);
+}
+.dd_list:hover a {
   color: var(--lightgreen);
 }
+
 /* ハンバーガーメニューのスタイル */
 .hamburger {
   display: none;
