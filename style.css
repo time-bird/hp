@@ -113,6 +113,8 @@ body {
   list-style: none;
   display: flex;          /* 子を親に揃えるためにflex化 */
   flex-direction: column; /* 縦並び */
+  margin: 0;
+  padding: 0;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
