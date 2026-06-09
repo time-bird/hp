@@ -94,7 +94,7 @@ body {
   font-weight: bold;
   transition: all .3s;
 }
-.nav_list a:hover {
+.nav_list > a:hover {
   background-color: var(--darkgreen);
   color: var(--lightgreen);
   width: max-content;
@@ -143,6 +143,7 @@ body {
 /* サブドロップダウンメニュー文字 */
 .dd_list a {
   display: flex;
+  width: 100%;
   height: 100%;
   padding: 0px 10px;
   color: var(--darkgreen);
@@ -152,6 +153,7 @@ body {
   justify-content: center;  /* ← 子リスト中央揃え */
   align-items: center;
   box-sizing: border-box;
+  transition: color .3s;
 }
 .dd_list:hover {
   background-color: var(--darkgreen);
