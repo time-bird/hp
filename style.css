@@ -361,6 +361,7 @@ b {
   max-width: 500px;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* 画像（幅700px） */
@@ -369,6 +370,7 @@ b {
   max-width: 700px;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* YouTube動画共通 */
