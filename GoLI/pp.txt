@@ -62,17 +62,15 @@ Local game progress and settings remain on your device until you clear the Appli
 
 Google and RevenueCat retain information according to their respective privacy policies and for as long as necessary to provide advertising, purchase verification, entitlement restoration, security, fraud prevention, legal compliance, and related services.
 
-You may request deletion of data associated with RevenueCat by contacting the Service Provider at timebird.development@gmail.com. Additional information may be required to identify the relevant anonymous RevenueCat customer record. Deleting a RevenueCat record may affect the ability to verify or restore the advertisement-removal entitlement. Some transaction or legal records may need to be retained by Google, RevenueCat, or the Service Provider where required by law.
-
 Uninstalling the Application stops future collection by the Application but does not automatically delete information already processed by Google or RevenueCat.
 
 Your Privacy Rights
 
-Depending on where you live, you may have rights to request access to, correction of, or deletion of personal data, to object to or restrict certain processing, or to withdraw consent. To exercise rights relating to data controlled by the Service Provider, contact timebird.development@gmail.com. You may also use the privacy controls provided by Google, Android, and the Application where available.
+Depending on where you live, you may have rights to request access to, correction of, or deletion of personal data, to object to or restrict certain processing, or to withdraw consent. You may use the privacy controls provided by Google, Android, and the Application where available. Information processed by Google and RevenueCat is also subject to their respective privacy policies and applicable law. Nothing in this Privacy Policy limits rights that cannot be waived under applicable law.
 
 California Privacy Rights
 
-California residents may have rights to know, correct, or delete personal information, to opt out of certain sale or sharing, and not to be discriminated against for exercising privacy rights. The Service Provider does not sell personal information. Requests may be submitted to timebird.development@gmail.com. Advertising privacy choices may also be available through the Application’s privacy options and Google or Android advertising controls.
+California residents may have rights to know, correct, or delete personal information, to opt out of certain sale or sharing, and not to be discriminated against for exercising privacy rights. The Service Provider does not sell personal information. Advertising privacy choices may be available through privacy options in the Application and Google or Android advertising controls.
 
 Children
 
